@@ -1,0 +1,2006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamsi & Divya Bharathi - Wedding</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ============ RESET & BASE STYLES ============ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafbf9;
+        }
+
+        /* ============ COLOR PALETTE ============ */
+        :root {
+            --primary-pink: #f4d4e8;
+            --primary-blush: #fce4ec;
+            --primary-gold: #d4af37;
+            --dark-navy: #1a1a2e;
+            --white: #ffffff;
+            --light-gray: #f5f5f5;
+            --text-dark: #2c3e50;
+            --text-light: #666666;
+        }
+
+        /* ============ TYPOGRAPHY ============ */
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+        }
+
+        .script-font {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: var(--primary-gold);
+        }
+
+        /* ============ NAVBAR ============ */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0);
+            transition: all 0.3s ease;
+            padding: 15px 0;
+        }
+
+        nav.scrolled {
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .nav-logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: var(--primary-gold);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: var(--primary-gold);
+        }
+
+        .nav-menu li {
+            position: relative;
+        }
+
+        .nav-menu .dropdown {
+            position: relative;
+        }
+
+        .nav-menu .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            min-width: 150px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        .nav-menu .dropdown:hover .dropdown-menu {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-menu .dropdown-menu a {
+            padding: 10px 15px;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-menu .dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-dark);
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        /* ============ HERO SECTION ============ */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .hero-content {
+            animation: slideUp 1s ease-out 0.2s both;
+        }
+
+        .hero .date-label {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 10px;
+            color: var(--white);
+            font-weight: 300;
+        }
+
+        .hero h1 .script {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            margin: 0 15px;
+            color: var(--primary-gold);
+            font-weight: 400;
+        }
+
+        .hero h1 .bold {
+            font-weight: 700;
+        }
+
+        .hero .subtext {
+            font-size: 1.4rem;
+            margin-top: 20px;
+            opacity: 0.95;
+        }
+
+        /* ============ SECTION STYLING ============ */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .divider {
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--primary-gold), transparent);
+            margin: 15px auto 40px;
+        }
+
+        .decorative-ornament {
+            margin: 15px auto;
+            text-align: center;
+            font-size: 1.5rem;
+            color: var(--primary-gold);
+        }
+
+        /* ============ OUR LOVE STORY SECTION ============ */
+        .love-story {
+            background-color: var(--white);
+        }
+
+        .love-story-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .love-story-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+            line-height: 1.8;
+            font-family: 'Noto Sans Telugu', sans-serif;
+        }
+
+        .proposal-section {
+            margin-top: 40px;
+        }
+
+        .proposal-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+            font-family: 'Noto Sans Telugu', sans-serif;
+        }
+
+        .love-story-image {
+            text-align: center;
+        }
+
+        .love-story-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ============ WEDDING INFO SECTION ============ */
+        .wedding-info {
+            background: linear-gradient(135deg, var(--primary-blush) 0%, var(--white) 100%);
+        }
+
+        .info-cards {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .info-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+        }
+
+        .info-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .info-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        .info-card .detail {
+            color: var(--text-light);
+            margin: 10px 0;
+            font-size: 0.95rem;
+        }
+
+        .info-card .detail strong {
+            color: var(--text-dark);
+            display: block;
+            margin-top: 5px;
+        }
+
+        .info-card a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            display: inline-block;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-gold);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .btn:hover {
+            background-color: #c49a27;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--white);
+            color: var(--text-dark);
+            border: 2px solid var(--primary-gold);
+            margin-top: 15px;
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--primary-gold);
+            color: var(--white);
+        }
+
+        /* ============ COUNTDOWN SECTION ============ */
+        .countdown {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('https://picsum.photos/1920/600?random=2') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .countdown h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--white);
+        }
+
+        .countdown-timer {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .countdown-item {
+            text-align: center;
+            min-width: 100px;
+        }
+
+        .countdown-number {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-gold);
+            display: block;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-label {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* ============ PHOTO GRID SECTION ============ */
+        .photo-grid {
+            background-color: var(--white);
+        }
+
+        .grid-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            aspect-ratio: 1;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .grid-label {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: var(--white);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        /* ============ GIFT CTA SECTION ============ */
+        .gift-cta {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://picsum.photos/1920/600?random=3') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .gift-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--white);
+        }
+
+        .gift-cta p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        /* ============ RSVP SECTION ============ */
+        .rsvp {
+            background-color: var(--primary-blush);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rsvp::before {
+            content: "✿";
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            font-size: 3rem;
+            color: rgba(212, 175, 55, 0.2);
+        }
+
+        .rsvp::after {
+            content: "✿";
+            position: absolute;
+            bottom: 20px;
+            left: 50px;
+            font-size: 3rem;
+            color: rgba(212, 175, 55, 0.2);
+        }
+
+        .rsvp-form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+        }
+
+        .form-group button {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .form-error {
+            color: #e74c3c;
+            font-size: 0.85rem;
+            margin-top: 5px;
+        }
+
+        .form-success {
+            color: #27ae60;
+            text-align: center;
+            padding: 20px;
+            background-color: #d5f4e6;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* ============ REGISTRY SECTION ============ */
+        .registry {
+            background-color: var(--white);
+        }
+
+        .registry-description {
+            max-width: 700px;
+            margin: 0 auto 50px;
+            text-align: center;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .brands-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .brand-logo {
+            height: 60px;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+            cursor: pointer;
+            object-fit: contain;
+        }
+
+        .brand-logo:hover {
+            filter: grayscale(0%);
+        }
+
+        /* ============ GALLERY SECTION ============ */
+        .gallery {
+            background-color: var(--light-gray);
+        }
+
+        .gallery-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 1;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay::before {
+            content: "🔍";
+            font-size: 2rem;
+            color: var(--white);
+        }
+
+        /* ============ LIGHTBOX ============ */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .lightbox-image {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 5px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: var(--white);
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            transform: scale(1.2);
+        }
+
+        /* ============ CONTACT US SECTION ============ */
+        .contact-us {
+            background: linear-gradient(160deg, #0f0c29 0%, #1a1a2e 30%, #302b63 60%, #1a1a2e 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 100px 20px 80px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Floating particles */
+        .contact-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.6), transparent);
+            animation: particleFloat linear infinite;
+        }
+
+        .particle:nth-child(1) {
+            width: 6px;
+            height: 6px;
+            left: 10%;
+            animation-duration: 12s;
+            animation-delay: 0s;
+        }
+
+        .particle:nth-child(2) {
+            width: 4px;
+            height: 4px;
+            left: 25%;
+            animation-duration: 15s;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(3) {
+            width: 8px;
+            height: 8px;
+            left: 40%;
+            animation-duration: 10s;
+            animation-delay: 4s;
+        }
+
+        .particle:nth-child(4) {
+            width: 5px;
+            height: 5px;
+            left: 55%;
+            animation-duration: 14s;
+            animation-delay: 1s;
+        }
+
+        .particle:nth-child(5) {
+            width: 7px;
+            height: 7px;
+            left: 70%;
+            animation-duration: 11s;
+            animation-delay: 3s;
+        }
+
+        .particle:nth-child(6) {
+            width: 3px;
+            height: 3px;
+            left: 85%;
+            animation-duration: 16s;
+            animation-delay: 5s;
+        }
+
+        .particle:nth-child(7) {
+            width: 6px;
+            height: 6px;
+            left: 15%;
+            animation-duration: 13s;
+            animation-delay: 6s;
+        }
+
+        .particle:nth-child(8) {
+            width: 4px;
+            height: 4px;
+            left: 60%;
+            animation-duration: 17s;
+            animation-delay: 7s;
+        }
+
+        .particle:nth-child(9) {
+            width: 5px;
+            height: 5px;
+            left: 90%;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+
+        .particle:nth-child(10) {
+            width: 7px;
+            height: 7px;
+            left: 35%;
+            animation-duration: 14s;
+            animation-delay: 4s;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                transform: translateY(100vh) scale(0);
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-10vh) scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* Decorative mandala rings */
+        .contact-us::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            right: -150px;
+            width: 400px;
+            height: 400px;
+            border: 2px solid rgba(212, 175, 55, 0.08);
+            border-radius: 50%;
+            animation: spinSlow 30s linear infinite;
+        }
+
+        .contact-us::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            border: 2px solid rgba(212, 175, 55, 0.06);
+            border-radius: 50%;
+            animation: spinSlow 25s linear infinite reverse;
+        }
+
+        @keyframes spinSlow {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Hero title area */
+        .contact-hero {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 60px;
+        }
+
+        .contact-hero .ornament-top {
+            font-size: 2rem;
+            color: rgba(212, 175, 55, 0.5);
+            margin-bottom: 20px;
+            letter-spacing: 15px;
+            animation: ornamentPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes ornamentPulse {
+
+            0%,
+            100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+
+        .telugu-hero-title {
+            font-family: 'Noto Sans Telugu', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.4;
+            background: linear-gradient(135deg, #d4af37, #f5d780, #d4af37, #f5d780, #d4af37);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: goldShimmer 4s ease-in-out infinite;
+            text-shadow: none;
+            position: relative;
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(40px) scale(0.95);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .telugu-hero-title.animate-in {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+
+        @keyframes goldShimmer {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .telugu-hero-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: linear-gradient(to right, transparent, #d4af37, #f5d780, #d4af37, transparent);
+            transition: width 1.5s ease 0.5s;
+        }
+
+        .telugu-hero-title.animate-in::after {
+            width: 100%;
+        }
+
+        .contact-hero .glow-ring {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+            animation: glowPulse 4s ease-in-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes glowPulse {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.15);
+                opacity: 1;
+            }
+        }
+
+        .contact-hero .subtitle {
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease 0.8s, transform 0.8s ease 0.8s;
+        }
+
+        .contact-hero .subtitle.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Divider line */
+        .contact-divider {
+            width: 200px;
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.6), transparent);
+            margin: 0 auto 50px;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 1s ease 1s;
+        }
+
+        .contact-divider.animate-in {
+            opacity: 1;
+        }
+
+        .contact-divider::before {
+            content: '◆';
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--primary-gold);
+            font-size: 0.8rem;
+        }
+
+        /* Info cards */
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 35px 30px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .contact-card.slide-left {
+            transform: translateX(-60px);
+        }
+
+        .contact-card.slide-right {
+            transform: translateX(60px);
+        }
+
+        .contact-card.animate-in {
+            opacity: 1;
+            transform: translateX(0) translateY(0);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-8px) !important;
+            box-shadow: 0 20px 50px rgba(212, 175, 55, 0.15);
+            border-color: rgba(212, 175, 55, 0.35);
+        }
+
+        .contact-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(to right, transparent, var(--primary-gold), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .contact-card:hover::before {
+            opacity: 1;
+        }
+
+        .contact-card .card-icon {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+            font-family: 'Noto Sans Telugu', 'Playfair Display', serif;
+        }
+
+        .contact-detail {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-detail:last-child {
+            border-bottom: none;
+        }
+
+        .contact-detail .detail-icon {
+            font-size: 1.2rem;
+            min-width: 38px;
+            height: 38px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .contact-detail .detail-info {
+            flex: 1;
+        }
+
+        .contact-detail .detail-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 3px;
+        }
+
+        .contact-detail .detail-value {
+            font-size: 1.05rem;
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 500;
+            font-family: 'Noto Sans Telugu', 'Poppins', sans-serif;
+        }
+
+        /* CTA buttons */
+        .contact-cta {
+            text-align: center;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease 1.2s, transform 0.8s ease 1.2s;
+        }
+
+        .contact-cta.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.45);
+        }
+
+        .btn-whatsapp svg {
+            width: 22px;
+            height: 22px;
+            fill: var(--white);
+        }
+
+        .btn-call {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--primary-gold), #c49a27);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            margin-left: 15px;
+        }
+
+        .btn-call:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 10px 30px rgba(212, 175, 55, 0.45);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .telugu-hero-title {
+                font-size: 2.2rem;
+            }
+
+            .contact-hero .subtitle {
+                font-size: 1.3rem;
+            }
+
+            .contact-cta .btn-call {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+
+            .contact-cta {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .telugu-hero-title {
+                font-size: 1.7rem;
+            }
+
+            .contact-card {
+                padding: 25px 20px;
+            }
+        }
+
+        /* ============ FOOTER ============ */
+        footer {
+            background-color: var(--dark-navy);
+            color: var(--white);
+            padding: 60px 20px 0;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 1rem;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            color: var(--primary-gold);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: var(--primary-gold);
+        }
+
+        .footer-center {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .footer-center .logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2rem;
+            color: var(--primary-gold);
+            margin-bottom: 10px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        /* ============ ANIMATIONS ============ */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                gap: 0;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu a {
+                padding: 15px 20px;
+                border-bottom: 1px solid #eee;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hamburger.active span:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .hamburger.active span:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active span:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h1 .script {
+                font-size: 2rem;
+            }
+
+            .hero .subtext {
+                font-size: 1rem;
+            }
+
+            .love-story-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading {
+                font-size: 2rem;
+            }
+
+            .countdown-timer {
+                gap: 15px;
+            }
+
+            .countdown-number {
+                font-size: 2.5rem;
+            }
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .info-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section {
+                padding: 50px 15px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h1 .script {
+                font-size: 1.5rem;
+                margin: 0 10px;
+            }
+
+            .section-heading {
+                font-size: 1.5rem;
+            }
+
+            .countdown-number {
+                font-size: 2rem;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+
+            .rsvp-form {
+                padding: 25px;
+            }
+
+            .gift-cta h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============ NAVBAR ============ -->
+    <nav id="navbar">
+        <div class="navbar-container">
+            <div class="nav-logo">V & D</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li class="dropdown">
+                    <a href="#blog">Blog</a>
+                    <div class="dropdown-menu">
+                        <a href="#blog">Blog</a>
+                        <a href="#blog-details">Blog Details</a>
+                        <a href="#elements">Elements</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="date-label">MAY 10</p>
+            <h1>
+                <span>Vamsi</span>
+                <span class="script">&</span>
+                <span class="bold">Divya</span>
+            </h1>
+            <p class="subtext">Will get married</p>
+        </div>
+    </section>
+
+    <!-- ============ LOVE STORY SECTION ============ -->
+    <section class="love-story" id="about">
+        <h2 class="section-heading" style="font-family: 'Noto Sans Telugu', sans-serif;">మ కథ</h2>
+        <div class="divider"></div>
+
+        <div class="love-story-content">
+            <div class="love-story-text">
+                <p>
+                    మా అనుబంధం పెద్దల ఆశీర్వాదంతో మొదలైన ఒక పవిత్రమైన బంధం. మా ఇద్దరి
+                    కుటుంబాలు ఒకే సంస్కృతిని, సంప్రదాయాలను పంచుకుంటాయి. దేవుని దయతో మా
+                    జీవితాలు ఒకటిగా కలవబోతున్నాయి. పెద్దల అనుభవం మరియు దైవ సంకల్పంతో
+                    ఏర్పడిన ఈ బంధం మాకు జీవితకాలపు ఆనందాన్ని ఇస్తుందని మా రెండు కుటుంబాలూ
+                    నమ్ముతున్నాయి.
+                </p>
+
+                <div class="proposal-section">
+                    <h3>నిశ్చితార్థం — మన కొత్త అధ్యాయం</h3>
+                    <p>
+                        మా పెద్దలు మంచి సమయం చూసి, జాతకాలు కలిపి, ఇరు కుటుంబాల అంగీకారంతో మా
+                        పరిచయం జరిపించారు. వంశీ రాజు మరియు దివ్య భారతి మొదటిసారి కలుసుకున్నప్పుడు,
+                        పెద్దల ఆశీర్వాదం మరియు దైవ సంకల్పం వారి కళ్ళలో ప్రతిబింబించింది.
+                    </p>
+                    <p>
+                        మా నిశ్చితార్థం హిందూ సంప్రదాయం ప్రకారం, పూజలు మరియు ఆశీర్వాదాలతో
+                        జరిగింది. పెద్దలు పసుపు కుంకుమలు, పూలమాలలతో ఈ శుభకార్యాన్ని నిర్వహించారు.
+                        అప్పటి నుండి మా హృదయాలు ఒక్కటయ్యాయి.
+                    </p>
+                    <p>
+                        ఇప్పుడు మేము మంగళసూత్రం, సప్తపది, మరియు అగ్నిసాక్షిగా జరిగే పవిత్ర
+                        వివాహానికి సిద్ధంగా ఉన్నాం. మా ఈ శుభ యాత్రలో పాలుపంచుకున్న ప్రతి
+                        ఒక్కరికీ మా హృదయపూర్వక కృతజ్ఞతలు.
+                    </p>
+                </div>
+            </div>
+
+            <div class="love-story-image">
+                <img src="engagement-photo.jpeg" alt="Couple Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WEDDING INFO SECTION ============ -->
+    <section class="wedding-info">
+        <h2 class="section-heading">Wedding Info</h2>
+        <div class="divider"></div>
+
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="icon">💒</div>
+                <h3>The Ceremony</h3>
+                <div class="detail">
+                    <strong>Date:</strong> May 10, 2026
+                </div>
+                <div class="detail">
+                    <strong>Time:</strong> 10:33 AM
+                </div>
+                <div class="detail">
+                    <strong>Venue:</strong> Anu Kalyanamandapam
+                </div>
+                <div class="detail">
+                    <strong>Address:</strong> Visannapeta, Krishna District, 521215
+                </div>
+                <a href="https://www.google.com/maps/place/Anu+Kalyana+Mandapam/@16.911201,80.8141591,17z/data=!3m1!4b1!4m6!3m5!1s0x3a36796d352882c1:0x6d2dc7958bf8daa8!8m2!3d16.911201!4d80.816734!16s%2Fg%2F11l37_7bz5?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener noreferrer">Check out the map →</a>
+                <a href="https://www.google.com/maps/place/Anu+Kalyana+Mandapam/@16.911201,80.8141591,17z/data=!3m1!4b1!4m6!3m5!1s0x3a36796d352882c1:0x6d2dc7958bf8daa8!8m2!3d16.911201!4d80.816734!16s%2Fg%2F11l37_7bz5?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">🎉</div>
+                <h3>The Reception</h3>
+                <div class="detail">
+                    <strong>Date:</strong> May 10, 2026
+                </div>
+                <div class="detail">
+                    <strong>Time:</strong> 10:33 AM
+                </div>
+                <div class="detail">
+                    <strong>Venue:</strong> Anu Kalyanamandapam
+                </div>
+                <div class="detail">
+                    <strong>Address:</strong> Visannapeta, Krishna District, 521215
+                </div>
+                <a href="https://www.google.com/maps/place/Anu+Kalyana+Mandapam/@16.911201,80.8141591,17z/data=!3m1!4b1!4m6!3m5!1s0x3a36796d352882c1:0x6d2dc7958bf8daa8!8m2!3d16.911201!4d80.816734!16s%2Fg%2F11l37_7bz5?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener noreferrer">Check out the map →</a>
+                <a href="https://www.google.com/maps/place/Anu+Kalyana+Mandapam/@16.911201,80.8141591,17z/data=!3m1!4b1!4m6!3m5!1s0x3a36796d352882c1:0x6d2dc7958bf8daa8!8m2!3d16.911201!4d80.816734!16s%2Fg%2F11l37_7bz5?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+
+            <div class="info-card">
+                <div class="icon">🎊</div>
+                <h3>The Party</h3>
+                <div class="detail">
+                    <strong>Date:</strong> May 10, 2026
+                </div>
+                <div class="detail">
+                    <strong>Time:</strong> 10:33 AM
+                </div>
+                <div class="detail">
+                    <strong>Venue:</strong> Anu Kalyanamandapam
+                </div>
+                <div class="detail">
+                    <strong>Address:</strong> Visannapeta, Krishna District, 521215
+                </div>
+                <a href="https://www.google.com/maps/place/Anu+Kalyana+Mandapam/@16.911201,80.8141591,17z/data=!3m1!4b1!4m6!3m5!1s0x3a36796d352882c1:0x6d2dc7958bf8daa8!8m2!3d16.911201!4d80.816734!16s%2Fg%2F11l37_7bz5?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener noreferrer">Check out the map →</a>
+                <a href="https://www.google.com/maps/place/Anu+Kalyana+Mandapam/@16.911201,80.8141591,17z/data=!3m1!4b1!4m6!3m5!1s0x3a36796d352882c1:0x6d2dc7958bf8daa8!8m2!3d16.911201!4d80.816734!16s%2Fg%2F11l37_7bz5?entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+                    class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ COUNTDOWN SECTION ============ -->
+    <section class="countdown">
+        <h2>We're Getting Married</h2>
+        <div class="countdown-timer">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">0</span>
+                <div class="countdown-label">Days</div>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">0</span>
+                <div class="countdown-label">Hours</div>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="mins">0</span>
+                <div class="countdown-label">Mins</div>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="secs">0</span>
+                <div class="countdown-label">Secs</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PHOTO GRID SECTION ============ -->
+    <section class="photo-grid">
+        <h2 class="section-heading">Our Moments</h2>
+        <div class="divider"></div>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="image-06.jpg.png.jpeg" alt="Image 01">
+                <div class="grid-label">Image 01</div>
+            </div>
+            <div class="grid-item">
+                <img src="image-02.jpg.jpeg" alt="Image 02">
+                <div class="grid-label">Image 02</div>
+            </div>
+            <div class="grid-item">
+                <img src="image-05.jpg.png.jpeg - Copy.jpeg" alt="Image 03">
+                <div class="grid-label">Image 03</div>
+            </div>
+            <div class="grid-item">
+                <img src="image-04.jpg.png" alt="Image 04">
+                <div class="grid-label">Image 04</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============ GALLERY SECTION ============ -->
+    <section class="gallery" id="gallery">
+        <h2 class="section-heading">Photo Gallery</h2>
+        <div class="divider"></div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-image="gallery/1.jpg.jpeg">
+                <img src="gallery/1.jpg.jpeg" alt="Gallery 1">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/2.jpg.jpeg">
+                <img src="gallery/2.jpg.jpeg" alt="Gallery 2">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/3.jpg.jpeg">
+                <img src="gallery/3.jpg.jpeg" alt="Gallery 3">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/4.jpg.jpeg">
+                <img src="gallery/4.jpg.jpeg" alt="Gallery 4">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/5.jpg.jpeg">
+                <img src="gallery/5.jpg.jpeg" alt="Gallery 5">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/6.jpg.jpeg">
+                <img src="gallery/6.jpg.jpeg" alt="Gallery 6">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/7.jpg.jpeg">
+                <img src="gallery/7.jpg.jpeg" alt="Gallery 7">
+                <div class="gallery-overlay"></div>
+            </div>
+            <div class="gallery-item" data-image="gallery/8.jpg.jpeg">
+                <img src="gallery/8.jpg.jpeg" alt="Gallery 8">
+                <div class="gallery-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LIGHTBOX ============ -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <img src="" alt="Gallery Image" class="lightbox-image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- ============ CONTACT US SECTION ============ -->
+    <section class="contact-us" id="contact">
+        <!-- Floating particles -->
+        <div class="contact-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <!-- Hero Title -->
+        <div class="contact-hero">
+            <div class="glow-ring"></div>
+            <div class="ornament-top">✦ ✦ ✦</div>
+            <h2 class="telugu-hero-title" id="teluguTitle">ఆదిమిల్లి వారి పెళ్లి పిలుపు</h2>
+            <p class="subtitle" id="contactSubtitle">Vamsi Raju & Divya Bharathi</p>
+        </div>
+
+        <div class="contact-divider" id="contactDivider"></div>
+
+        <div class="contact-container">
+            <!-- Couple Card -->
+            <div class="contact-card slide-left" id="coupleCard">
+                <div class="card-icon">💍</div>
+                <h3>వరుడు & వధువు</h3>
+                <div class="contact-detail">
+                    <div class="detail-icon">🤵</div>
+                    <div class="detail-info">
+                        <div class="detail-label">Groom (వరుడు)</div>
+                        <div class="detail-value">Vamsi Raju</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="detail-icon">👰</div>
+                    <div class="detail-info">
+                        <div class="detail-label">Bride (వధువు)</div>
+                        <div class="detail-value">Divya Bharathi</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parents Card -->
+            <div class="contact-card slide-right" id="parentsCard">
+                <div class="card-icon">🙏</div>
+                <h3>తల్లిదండ్రులు</h3>
+                <div class="contact-detail">
+                    <div class="detail-icon">👨</div>
+                    <div class="detail-info">
+                        <div class="detail-label">Groom's Father (వరుడి తండ్రి)</div>
+                        <div class="detail-value">ఆదిమిల్లి వరప్రసాద్</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="detail-icon">👩</div>
+                    <div class="detail-info">
+                        <div class="detail-label">Groom's Mother (వరుడి తల్లి)</div>
+                        <div class="detail-value">ఆదిమిల్లి అరుణ కుమారి</div>
+                    </div>
+                </div>
+                <div class="contact-detail">
+                    <div class="detail-icon">📞</div>
+                    <div class="detail-info">
+                        <div class="detail-label">Mobile</div>
+                        <div class="detail-value">
+                            <a href="tel:+919182041743" style="color: rgba(255,255,255,0.9); text-decoration: none;">+91
+                                91820 41743</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-cta" id="contactCta">
+            <a href="https://wa.me/919182041743?text=Congratulations!%20We%20are%20happy%20to%20attend%20the%20wedding%20of%20Vamsi%20Raju%20%26%20Divya%20Bharathi!"
+                target="_blank" class="btn-whatsapp">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                WhatsApp
+            </a>
+            <a href="tel:+919182041743" class="btn-call">
+                📞 Call Now
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="footer-center">
+            <div class="logo">V & D</div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>WEDDING INFO</h3>
+                <p
+                    style="color: rgba(255, 255, 255, 0.85); font-size: 0.95rem; line-height: 1.6; margin-top: 10px; max-width: 250px;">
+                    A Hindu wedding is a sacred Vedic ritual centered around the Agni (sacred fire), signifying a
+                    lifelong commitment between the bride and groom.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li>Adimilli Vamsi Raju - Groom</li>
+                    <li
+                        style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; margin-top: -8px; margin-bottom: 15px;">
+                        (Kondaparva village)</li>
+                    <li>Divya Bharathi - Bride</li>
+                    <li style="color: rgba(255, 255, 255, 0.7); font-size: 0.85rem; margin-top: -8px;">(Lakkavaram
+                        village)</li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>LOCATION</h3>
+                <ul>
+                    <li>Anu Kalyanamandapam,</li>
+                    <li>near Kondaporva Busstop,</li>
+                    <li>Visannapeta, Krishna District,</li>
+                    <li>Andhra pradesh,</li>
+                    <li>India.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            Copyright © 2026 All rights reserved | Made with ❤ by Vamsi & Divya
+        </div>
+    </footer>
+
+    <script>
+        // ============ NAVBAR FUNCTIONALITY ============
+        const navbar = document.getElementById('navbar');
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        // Scroll effect on navbar
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Hamburger menu toggle
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // ============ COUNTDOWN TIMER ============
+        function updateCountdown() {
+            const weddingDate = new Date('May 10, 2026').getTime();
+            const now = new Date().getTime();
+            const timeRemaining = weddingDate - now;
+
+            if (timeRemaining > 0) {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const mins = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const secs = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = days;
+                document.getElementById('hours').textContent = hours;
+                document.getElementById('mins').textContent = mins;
+                document.getElementById('secs').textContent = secs;
+            } else {
+                document.querySelector('.countdown-timer').innerHTML = '<h3 style="color: var(--primary-gold); grid-column: 1/-1;">We are Married!</h3>';
+            }
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+
+        // ============ GALLERY LIGHTBOX ============
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const imageUrl = item.dataset.image;
+                lightboxImage.src = imageUrl;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // ============ SCROLL ANIMATIONS ============
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // ============ SMOOTH SCROLL ============
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // ============ CONTACT SECTION SCROLL ANIMATIONS ============
+        const contactSection = document.getElementById('contact');
+        const teluguTitle = document.getElementById('teluguTitle');
+        const contactSubtitle = document.getElementById('contactSubtitle');
+        const contactDivider = document.getElementById('contactDivider');
+        const coupleCard = document.getElementById('coupleCard');
+        const parentsCard = document.getElementById('parentsCard');
+        const contactCta = document.getElementById('contactCta');
+
+        const contactObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    // Animate title first
+                    setTimeout(() => teluguTitle.classList.add('animate-in'), 200);
+                    // Then subtitle
+                    setTimeout(() => contactSubtitle.classList.add('animate-in'), 600);
+                    // Then divider
+                    setTimeout(() => contactDivider.classList.add('animate-in'), 900);
+                    // Then cards slide in from sides
+                    setTimeout(() => coupleCard.classList.add('animate-in'), 1200);
+                    setTimeout(() => parentsCard.classList.add('animate-in'), 1500);
+                    // Then CTA buttons
+                    setTimeout(() => contactCta.classList.add('animate-in'), 1800);
+
+                    contactObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        if (contactSection) {
+            contactObserver.observe(contactSection);
+        }
+    </script>
+</body>
+
+</html>
